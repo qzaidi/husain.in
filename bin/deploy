@@ -1,3 +1,32 @@
 #!/bin/bash
 
+ENV=$1
+
+abort() {
+  echo
+  echo "  $@" 1>&2
+  echo
+  exit 1
+}
+
+log() {
+  echo "  ○ $@"
+}
+
+echo "Running npm install in $PWD"
+npm install
+
+#create symlink for logs
+ln -sf ../shared/logs
+
+log 'Checking for running instances via forever'
+forever list | grep app.js
+if [ $? -eq 0 ]; then
+  log 'Stopping running process'
+  forever stop app.js
+fi
+
+#start with forever
+bin/startapp
+
 echo "deployment complete"

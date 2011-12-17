@@ -1,0 +1,2 @@
+#!/bin/sh
+forever  -a -o logs/stdout -e logs/stderr start app.js
