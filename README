@@ -1,0 +1,2 @@
+This is a fork of https://github.com/jmhobbs/consume-less-create-more
+The original project was in PHP, which I have replaced with node.js/express
