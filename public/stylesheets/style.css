@@ -36,3 +36,11 @@ a {
 	font-family: Helvetica, Geneva, Arial, sans-serif;
 	font-size: 10px;
 }
+#share-box {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	z-index: 5;
+	font-family: Helvetica, Geneva, Arial, sans-serif;
+	font-size: 10px;
+}

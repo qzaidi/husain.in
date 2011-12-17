@@ -21,7 +21,7 @@ var charities = [
   },
   {
     "charity" : true,
-    "content" : "The mission of Imam Hussain (pbuh) is distinctly unique, political and religious revolutionary movement in the history of World. His was a tremendous undertaking which still reverberates throughout the Muslim nation.",
+    "content" : "The mission of Imam Husain (a.s.) is distinctly unique, political and religious revolutionary movement in the history of World. His was a tremendous undertaking which still reverberates throughout the Muslim nation.",
     "name" : "Visit Tears of Karbala",
     "link" : "http://www.tearsofkarbala.com/"
   }
