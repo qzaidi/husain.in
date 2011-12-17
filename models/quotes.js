@@ -1,156 +1,189 @@
+var util = require('util');
+
 var charities = [
   {
     "charity" : true,
-    "content" : "Kiva's mission is to connect people, through lending, for the sake of alleviating poverty.<br/><br/>Kiva empowers individuals to lend to an entrepreneur across the globe.",
-    "name" : "Visit Kiva.org",
-    "link" : "http://www.kiva.org/"
+    "content" : "Welcome to Al-Islam.org. We invite you to begin a journey of clicks to explore this site thoroughly. We hope this journey is a source of education and enlightenment.",
+    "name" : "Visit Al-Islam.org",
+    "link" : "http://www.al-islam.org/"
   },
   {
     "charity" : true,
-    "content" : "Samasource enables marginalized people, from refugees in Kenya to women in rural Pakistan, to receive life-changing work opportunities via the Internet.",
-    "name" : "Visit samasource.org",
-    "link" : "http://www.samasource.org/"
+    "content" : "Why did he not perform the hajj? Why did Imam Husain not delay his journey to Kufa for a few days? It would have made little difference in time. What was the urgency for his departure, for beginning his journey?",
+    "name" : "Ashura Lectures (IKA Howard)",
+    "link" : "http://www.al-islam.org/al-serat/yawm/"
   },
   {	
     "charity" : true,
-    "content" : "Improving public education by empowering every teacher to be a change-maker and enabling any citizen to be a philanthropist.",
-    "name" : "Visit DonorsChoose.org",
-    "link" : "http://www.donorschoose.org/"
+    "content" : "Ashura Awareness is a nationwide campaign to distribute Islamic literature to the general public, raising particular awareness on the revolution of Imam Hussain [as].",
+    "name" : "Visit AIM Islam",
+    "link" : "http://www.aimislam.com/ashura-awareness-2011-begins/"
   },
   {
     "charity" : true,
-    "content" : "charity: water is a non-profit bringing clean and safe drinking water to people in developing nations.",
-    "name" : "Visit charity: water",
-    "link" : "http://www.charitywater.org/"
+    "content" : "The mission of Imam Hussain (pbuh) is distinctly unique, political and religious revolutionary movement in the history of World. His was a tremendous undertaking which still reverberates throughout the Muslim nation.",
+    "name" : "Visit Tears of Karbala",
+    "link" : "http://www.tearsofkarbala.com/"
   }
 ];
 
 var quotes = [
   {
-    "content" : "Our duty, as men and women, is to proceed as if limits to our ability did not exist. We are collaborators in creation.",
-    "name" : "Teilhard de Chardin",
+    "content" : "Whoever seeks the satisfaction of people through disobedience of Allah, then Allah subjects him to people.",
+    "name" : "Imam Husain (a.s.)",
     "link" : null,
-    "source" : "http://thinkexist.com/quotes/with/keyword/creation/"
+    "source" : "http://www.sibtayn.com/"
   },
   {
-    "content" : "When we engage in what we are naturally suited to do, our work takes on the quality of play and it is play that stimulates creativity.",
-    "name" : "Linda Naiman",
+    "content" : "O Allah, How can a thing the existence of which is dependent on you be taken as a proof for your existence? Is there anything more evident than your 'self' to disclose you?",
+    "name" : "Imam Husain (a.s.)",
     "link" : null,
-    "source" : "http://abundance-blog.marelisa-online.com/2009/01/27/75-creativity-quotes/"
+    "source" : "Dua-e-Arafa"
   },
   {
-    "content" : "But this is just the start of something much bigger.",
-    "name" : "Cory Doctorow",
+    "content" : "He who has you, has everything, and he who has deprived himself of you is the poorest in the world. Loser is the one who chooses and be content with anyone or anything other than you.",
+    "name" : "Imam Husain (a.s.)",
     "link" : null,
-    "source" : "http://thinkexist.com/quotes/cory_doctorow/"
+    "source" : "Biharol Anwar, Vol. 98, P. 228"
   },
   {
-    "content" : "Creativity is a type of learning process where the teacher and pupil are located in the same individual.",
-    "name" : "Arthur Koestler",
+    "content" : " That is because 'enjoining good and forbidding evil' is a call for Islam, it regains the rights of the oppressed and opposes tyrants.",
+    "name" : "Imam Husain (a.s.)",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : "http://www.sibtayn.com"
   },
   {
-    "content" : "If you want to make an apple pie from scratch, you must first create the universe.",
-    "name" : "Carl Sagan",
+    "content" : " To me, death is nothing but happiness, and living under tyrants nothing but living in a hell.",
+    "name" : "Imam Husain (a.s.)",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : "http://www.sibtayn.com"
   },
   {
-    "content" : "Creativity is the sudden cessation of stupidity.",
-    "name" : "Edwin Land",
+    "content" : " If wealth is amassed for one day to be left, then why a free man becomes so miserly on something he has to leave.",
+    "name" : "Imam Husain (a.s.)",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : "http://www.sibtayn.com"
   },
   {
-    "content" : "It is better to have enough ideas for some of them to be wrong, than to be always right by having no ideas at all.",
-    "name" : "Edward de Bono",
+    "content" : "My faith is that the progress of Islam does not depend on the use of sword by its believers, but the result of the supreme sacrifice of Husain, the great saint.",
+    "name" : "Mahatma Gandhi",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : "http://www.sibtayn.com"
   },
   {
-    "content" : "It is better to have enough ideas for some of them to be wrong, than to be always right by having no ideas at all.",
-    "name" : "Edward de Bono",
+    "content" : "In a distant age and climate the tragic scene of the death of Hosein will awaken the sympathy of the coldest reader.",
+    "name" : "Edward Gibbon",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : "http://www.sibtayn.com"
   },
   {
-    "content" : "Creativity comes from trust. Trust your instincts. And never hope more than you work.",
-    "name" : "Rita Mae Brown",
+    "content" : "Hussain is of myself and I am of Hussain.",
+    "name" : "Prophet Muhammad (PBUH)",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : "Musnad Ahmad Ibn Hanbal"
   },
   {
-    "content" : "Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort.",
-    "name" : "Franklin D. Roosevelt",
+    "content" : "Every Day is Ashura, Every Land is Karbala",
+    "name" : "Imam Jafar as Sadiq (a.s.) ",
     "link" : null,
-    "source" : "http://www.wisdomquotes.com/cat_creativity.html"
+    "source" : null
   },
   {
-    "content" : "Growth for the sake of growth is the ideology of the cancer cell.",
-    "name" : "Edward Abbey",
+    "content" : "I congratulate Muslims that from among them, Hussain (A.S.), a great human being was born, who is reverted and honored totally by all communities.",
+    "name" : "Sarojini Naidu",
     "link" : null,
-    "source" : "http://www.quotegarden.com/consumerism.html"
+    "source" : null
   },
   {
-    "content" : "You have succeeded in life when all you really want is only what you really need.",
-    "name" : "Vernon Howard",
-    "link" : null,
-    "source" : "http://www.quotegarden.com/consumerism.html"
-  },
-  {
-    "content" : "The hardest thing is to take less when you can get more.",
-    "name" : "Kin Hubbard",
-    "link" : null,
-    "source" : "http://www.quotegarden.com/consumerism.html"
-  },
-  {
-    "content" : "Do not trouble yourself much to get new things, whether clothes or friends.... Sell your clothes and keep your thoughts.",
-    "name" : "Henry David Thoreau",
-    "link" : null,
-    "source" : "http://www.quotegarden.com/consumerism.html"
-  },
-  {
-    "content" : "You can never get enough of what you don't need to make you happy.",
-    "name" : "Eric Hoffer",
-    "link" : null,
-    "source" : "http://www.quotegarden.com/consumerism.html"
-  },
-  {
-    "content" : "The corruption of the American soul is consumerism.",
-    "name" : "Ben Nicholson",
-    "link" : null,
-    "source" : "http://www.brainyquote.com/quotes/keywords/consumerism.html"
-  },
-  {
-    "content" : "Pop culture is not about depth. It's about marketing, supply and demand, consumerism.",
-    "name" : "Trevor Dunn",
-    "link" : null,
-    "source" : "http://www.brainyquote.com/quotes/keywords/consumerism.html"
-  },
-  {
-    "content" : "Never stay up on the barren heights of cleverness, but come down into the green valleys of silliness.",
-    "name" : "Ludwig Wittgenstein",
-    "link" : null,
-    "source" : "http://en.wikiquote.org/wiki/Ludwig_Wittgenstein"
-  },
-  // Courtesy of Jason Lefton - http://hellogylo.com/
-  {
-    "content" : "I believe in technology, but I think we need to make it more human. I believe that the Internet is becoming a planetary meta-organism, but that it is up to us to guide its evolution, and to shape it into a space we actually want to inhabit - one that can understand and honor both the individual human and the human collective, just like real life does.",
-    "name" : "Jonathan Harris",
+    "content" : "…a reminder of that blood-stained field of Karbala, where the grandson of the Apostle of God fell, at length, tortured by thirst, and surround by the bodies of his murdered kinsmen, has been at anytime since then, sufficient to evoke, even in the most lukewarm and the heedless, the deepest emotion, the most frantic grief, and an exaltation of spirit before which pain, danger, and death shrink to unconsidered trifles.",
+    "name" : "Edward Brown",
     "link" : null,
     "source" : null,
     "showfor" : 15000
   },
-  // Courtesy of Jason Lefton - http://hellogylo.com/
   {
-    "content" : "This is something that I've said before and I'll say it again: I've spent five years on this. You should spend an hour on it. You know, spend two hours on it. That would be the decent, respectful thing to do, as opposed to writing a snarky five-minute thing that's making fun of me, or saying what other people have said.",
-    "name" : "Charlie Kaufman",
+    "content" : "In order to keep alive justice and truth, instead of an army or weapons, success can be achieved by sacrificing lives, exactly what Imam Hussain (A.S.) did",
+    "name" : "Rabindranath Tagore",
+    "link" : null,
+    "source" : "http://www.iranmilitaryforum.net/index.php?topic=12620.0"
+  },
+  {
+    "content" : "Tolerance is man’s ornament, keeping promises is a sign of nobility, and bonding with others is a grace.",
+    "name" : "Imam Husain (a.s.)",
+    "link" : null,
+    "source" : "http://en.wikiquote.org/wiki/Husayn_ibn_Ali"
+  },
+  {
+    "content" : "One who pursues a goal through sinful ways, will ironically distance himself from that goal, and will approach what he was afraid of.",
+    "name" : "Imam Husain (a.s.)",
+    "link" : null,
+    "source" : "http://en.wikiquote.org/wiki/Husayn_ibn_Ali"
+  },
+  {
+    "content" : "Think not of those who are slain in God’s way as dead. Nay, they are living, finding their sustenance in the presence of their Lord",
+    "name" : "Quran 3:169",
+    "link" : null,
+    "source" : null
+  },
+  {
+    "content" : "I learned from Hussein how to achieve victory while being oppressed.",
+    "name" : "Mahatma Gandhi",
+    "link" : null,
+    "source" : "http://www.brainyquote.com/quotes/keywords/consumerism.html"
+  },
+  {
+    "content" : "Among the signs of a learned man is criticising his own words and being informed of various viewpoints.",
+    "name" : "Imam Husain (a.s.)",
+    "link" : null,
+    "source" : "http://en.wikiquote.org/wiki/Husayn_ibn_Ali"
+  },
+  {
+    "content" : "The best lesson which we get from the tragedy of Karbala is that Husain and his companions were rigid believers in God. They illustrated that the numerical superiority does not count when it comes to the truth and the falsehood. The victory of Husain, despite his minority, marvels me!",
+    "name" : "Thomas Carlyle",
+    "link" : null,
+    "source" : null,
+    "showfor" : 15000
+  },
+  {
+    "content" : "If Husain had fought to quench his worldly desires…then I do not understand why his sister, wife, and children accompanied him. It stands to reason therefore, that he sacrificed purely for Islam.",
+    "name" : "Charles Dickens",
     "link" : null,
     "source" : null,
     "showfor" : 15000
   }
 ];
 
-exports.charity = charities;
-exports.regular = quotes;
+exports.init = function() {
+  return {
+    'quotes': {
+      // list of all quotes indexes that have been seen
+    },
+    charityCounter: 0,
+    quotesCounter:  0
+  };
+  util.log('session inited: total ' + quotes.length + ' quotes in db');
+}
+
+exports.getRandom = function(seen) {
+  var counter = ++seen.charityCounter;
+  var numCharities = charities.length;
+  var numQuotes = quotes.length;
+  var selected;
+
+  if ((counter % 4) === 0) {
+    return charities[(counter/4) % numCharities];
+  }
+
+  if (seen.quotesCounter === numQuotes) {
+    return { 'completed': true };
+  }
+
+  do {
+    selected = Math.floor(Math.random() * numQuotes);
+  } while (selected in seen.quotes);
+
+  seen.quotes[selected] = true;
+  seen.quotesCounter++;
+
+  return quotes[selected];
+};
