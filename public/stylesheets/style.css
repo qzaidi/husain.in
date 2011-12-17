@@ -3,20 +3,22 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+  color: #fff;
+  background-color: #000;
 }
 a {
 	text-decoration: none;
-	color: #444;
+	color: #ddd;
 }
 .charity {
-	color: #A44;
+	color: #ddd;
 }
 #quote-box {
-	background: url(/images/background.gif) no-repeat;
+	background: url(/images/background.png) no-repeat;
 	height: 250px;
 	width: 650px;
 	position: absolute;
-	padding: 150px 50px;
+	padding: 250px 10px;
 	font-family: Helvetica, Geneva, Arial, sans-serif;
 	font-size: 28px;
 	display: inline-block;
@@ -25,8 +27,8 @@ a {
 #sayer {
 	font-weight: bold;
 	position: absolute;
-	bottom: 50px;
-	right: 200px;
+	bottom: 250px;
+	right: 100px;
 }
 #link-box {
 	position: absolute;

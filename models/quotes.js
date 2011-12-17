@@ -89,13 +89,13 @@ var quotes = [
     "source" : null
   },
   {
-    "content" : "I congratulate Muslims that from among them, Hussain (A.S.), a great human being was born, who is reverted and honored totally by all communities.",
+    "content" : "I congratulate Muslims that from among them, Hussain (A.S.), a great human being was born, who is revered and honored equally by all communities.",
     "name" : "Sarojini Naidu",
     "link" : null,
     "source" : null
   },
   {
-    "content" : "…a reminder of that blood-stained field of Karbala, where the grandson of the Apostle of God fell, at length, tortured by thirst, and surround by the bodies of his murdered kinsmen, has been at anytime since then, sufficient to evoke, even in the most lukewarm and the heedless, the deepest emotion, the most frantic grief, and an exaltation of spirit before which pain, danger, and death shrink to unconsidered trifles.",
+    "content" : "…that blood-stained field of Karbala, where the grandson of the Apostle of God fell, at length, tortured by thirst, and surround by the bodies of his murdered kinsmen, has been at anytime since then, sufficient to evoke, even in the most lukewarm and the heedless, the deepest emotion, the most frantic grief, and an exaltation of spirit before which pain, danger, and death shrink to unconsidered trifles.",
     "name" : "Edward Brown",
     "link" : null,
     "source" : null,
