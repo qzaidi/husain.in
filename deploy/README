@@ -1,0 +1,23 @@
+For Automated deployments
+
+1. On the remote host, generate a key
+  ssh-keygen -t rsa
+
+2. Authorize the public key
+  cd .ssh
+  cat id_rsa.pub >> authorized_keys
+
+3. Copy the private key to the keys folder create in this dir (e.g. deploy/keys)
+  scp remote_host:.ssh/id_rsa keys/remote
+
+4. Create deploy.conf in this dir
+
+[production]
+key keys/production
+user www-data
+host x.y.z.a
+repo git@github.com:qzaidi/husain.in.git
+path /var/www/husain.in/releases
+ref origin/master
+post-deploy ./bin/deploy
+
