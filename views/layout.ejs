@@ -3,27 +3,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Husain.in</title>
+		<title>Husain.in - awakening human conscience </title>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 		<script type="text/javascript" src="/javascripts/clcm.min.js"></script>
 		<link rel="stylesheet" href="/stylesheets/style.min.css" media="screen" />
 	</head>
 	<body>
-    <div id="share-box">
-      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhusain.in&amp;send=false&amp;layout=button_count&amp;width=40&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://husain.in" data-lang="en">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
+   <%- partial('share.ejs') %>
 
-    <div id="link-box">
-			<a href="#" id="play-pause">pause</a> - 
-			<a href="#" target="_blank">about</a> -
-			<a href="http://github.com/qzaidi/husain.in" target="_blank">fork me</a>
-	  </div>
+   <%- partial('links.ejs') %>
 
+   
   <%- body %>
 
 	<script type="text/javascript">$( CLCM.init );</script>
+
+  <%- partial('footer.ejs') %>
 	</body>
 </html>
 

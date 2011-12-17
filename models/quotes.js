@@ -59,7 +59,7 @@ var quotes = [
     "source" : "http://www.sibtayn.com"
   },
   {
-    "content" : " If wealth is amassed for one day to be left, then why a free man becomes so miserly on something he has to leave.",
+    "content" : " If wealth is amassed for one day to be left, then why a free man becomes so miserly on something he has to leave ?",
     "name" : "Imam Husain (a.s.)",
     "link" : null,
     "source" : "http://www.sibtayn.com"
@@ -150,7 +150,14 @@ var quotes = [
     "link" : null,
     "source" : null,
     "showfor" : 15000
+  },
+  {
+    "content" : "Verily, Husain is the foundation of Divine Unity." ,
+    "name" : "Khwaja Moinuddin Chisti",
+    "link" : null,
+    "source" : null
   }
+
 ];
 
 exports.init = function() {
