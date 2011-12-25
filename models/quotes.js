@@ -164,7 +164,7 @@ var quotes = [
   },
   {
     "content" : "Verily, Husain is the foundation of Divine Unity." ,
-    "name" : "Khwaja Moinuddin Chisti",
+    "name" : "Khwaja Moinuddin Chishti",
     "link" : null,
     "source" : null
   }
