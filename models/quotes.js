@@ -7,12 +7,6 @@ var charities = [
     "name" : "Visit Al-Islam.org",
     "link" : "http://www.al-islam.org/"
   },
-  {
-    "charity" : true,
-    "content" : "Why did he not perform the hajj? Why did Imam Husain not delay his journey to Kufa for a few days? It would have made little difference in time. What was the urgency for his departure, for beginning his journey?",
-    "name" : "Ashura Lectures (IKA Howard)",
-    "link" : "http://www.al-islam.org/al-serat/yawm/"
-  },
   {	
     "charity" : true,
     "content" : "Ashura Awareness is a nationwide campaign to distribute Islamic literature to the general public, raising particular awareness on the revolution of Imam Hussain [as].",
@@ -29,10 +23,27 @@ var charities = [
 
 var quotes = [
   {
+    "content" : "Under the blazing sun, on the parched land and against the stifling heat of Arabia, stood the immortal Hussain.",
+    "name"    : "Washington Irvin",
+    "link"    : null,
+    "source"  : null
+  },
+  {
+    "content" : "I brought nothing new for the Indian people. I only presented the outcome of my understanding from the personality of the hero of Karbala. We have no way but to follow the lead of Imam Husain.",
+    "name"    : "Mahatma Gandhi",
+    "link"    : null,
+    "source"  : null
+  },
+  {
     "content" : "Whoever seeks the satisfaction of people through disobedience of Allah, then Allah subjects him to people.",
     "name" : "Imam Husain (a.s.)",
     "link" : null,
     "source" : "http://www.sibtayn.com/"
+  },
+  { "content" : "Is it possible to find a heart that is not filled with sorrow when it hears about the events of Karbala. No one, even a non-Muslim, can deny the truth of the spirit of the war and what happened to Imam Hossein.",
+    "name": "Edward Brown",
+    "link": null,
+    "source": "http://samimaneh-newdays.blogspot.com/2010/01/imam-hussain-as-in-words-of-celebrities.html"
   },
   {
     "content" : "O Allah, How can a thing the existence of which is dependent on you be taken as a proof for your existence? Is there anything more evident than your 'self' to disclose you?",
